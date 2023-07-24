@@ -11,13 +11,31 @@ class DicePage extends StatelessWidget {
 		Widget build(BuildContext context) {
 			return MaterialApp(
 					home: Scaffold(
-						backgroundColor:Colors.red,
+//						backgroundColor:Colors.red,
 						appBar: AppBar(
 							title: Text('Dicee'),
-							backgroundColor:Colors.red,
+//							backgroundColor:Colors.red,
 							),
-
-						),
-					);
+						body:
+						Container(
+							decoration:BoxDecoration(
+								gradient:LinearGradient(
+									colors: [
+									Colors.blue.shade100,
+									Colors.blue.shade900,
+									],
+									),
+								),
+							child: Center(
+								child: Text('hello world',
+									style:TextStyle(
+										color:Colors.white,
+										fontSize:28,
+									),
+									),
+							      ),
+							),
+				),
+				);
 		}
 }
