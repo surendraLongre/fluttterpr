@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'gradient_container.dart';
 
 void main() {
 	return runApp(
@@ -22,29 +23,3 @@ class DicePage extends StatelessWidget {
 		}
 }
 
-class GradientContainer extends StatelessWidget{
-	@override
-		Widget build(BuildContext context){
-			return Container(
-					decoration:BoxDecoration(
-						gradient:LinearGradient(
-							colors: [
-							Colors.blue.shade500,
-							Colors.blue.shade900,
-							],
-							begin:Alignment.topLeft,
-							end:Alignment.bottomRight,
-							),
-						),
-					child: Center(
-						child: Text('hello world',
-							style:TextStyle(
-								color:Colors.white,
-								fontSize:28,
-								),
-							),
-						),
-					);
-
-		}
-}
