@@ -17,7 +17,7 @@ class DicePage extends StatelessWidget {
 							title: Text('Dicee'),
 							//							backgroundColor:Colors.red,
 							),
-						body: GradientContainer(),
+						body: const GradientContainer(),
 						),
 					);
 		}
